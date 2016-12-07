@@ -5,8 +5,13 @@ describe('Plane', function(){
     plane = new Plane();
   });
 
-  it("should have status landed", function(){
-    expect( plane.land() ).toBe(true);
+  it("should be able to land", function(){
+    plane.land()
+    expect(plane.isLanded).toBe(true);
+  });
+  it("should be able to take off", function() {
+    plane.takeOff()
+    expect(plane.isLanded).toBe(false);
   });
 
 });
