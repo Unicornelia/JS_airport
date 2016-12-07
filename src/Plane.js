@@ -1,5 +1,5 @@
-var Plane = function(){
-  this.isLanded = false;
+var Plane = function(isLanded){
+  this.isLanded = isLanded || false;
 };
 
 Plane.prototype.land = function(){

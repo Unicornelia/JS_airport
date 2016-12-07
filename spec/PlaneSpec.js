@@ -5,6 +5,10 @@ describe('Plane', function(){
     plane = new Plane();
   });
 
+  it("should start out in the sky", function() {
+    expect(plane.isLanded).toBe(false);
+  });
+
   it("should be able to land", function(){
     plane.land()
     expect(plane.isLanded).toBe(true);
