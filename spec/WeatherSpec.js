@@ -8,7 +8,6 @@
       weather = new Weather();
     });
 
-
     it('weather forecast makes it false', function() {
       spyOn(Math, 'random').and.returnValue(1);
       expect(weather.isStormy()).toEqual(false);
