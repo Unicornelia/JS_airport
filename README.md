@@ -27,13 +27,17 @@ Features that are implemented:
  * Plane landing
  * Plane takeoff
  * Full airport cannot land planes
+ * Empty airport cannot authorize a plane to take off
  * Variable and default capacity
- * Airport has to handle weather information and stop planes from taking off or landing when the weather is not sunny
+ * Airport has to handle weather information and stop planes from taking off or landing when the weather is stormy
  * Planes that landed cannot land again
  * Planes that are flying cannot be at airport
 
 Technologies used:
 -----------------
-
 - JavaScript
 - Jasmine
+
+How to use app:
+---------------
+- This is a console app, load SpecRunner.html in Browser, hit ```cmd + alt + J``` and create objects, observe their interaction
