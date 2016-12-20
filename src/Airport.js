@@ -1,5 +1,6 @@
 var Airport = function(){
   this._planes = [];
+  this.capacity = 2;
 };
 
 Airport.prototype.landPlane = function(plane) {
