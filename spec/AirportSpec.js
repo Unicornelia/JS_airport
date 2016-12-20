@@ -24,12 +24,12 @@ describe('Airport', function(){
 
   describe('in bad weather', function() {
     it('cannot accept planes to land due to bad weather', function() {
-      spyOn(weather, 'isStormy').and.returnValue(false);
+      spyOn(weather, 'isStormy').and.returnValue(true);
       expect(function () {airport.landPlane(plane)}).toThrow('Cannot land due to bad weather');
     });
 
     it('cannot let planes to take off due to bad weather', function() {
-      spyOn(weather, 'isStormy').and.returnValue(false);
+      spyOn(weather, 'isStormy').and.returnValue(true);
       expect(function () {airport.takeOffPlane(plane)}).toThrow('Cannot take off due to bad weather');
     });
 
