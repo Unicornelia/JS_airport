@@ -3,8 +3,12 @@ var Plane = function(isLanded){
 };
 
 Plane.prototype.land = function(){
-  this.isLanded = true;
-  console.log("The plane has landed.");
+  if (this.isLanded == false) {
+    return this.isLanded = true;
+    console.log("The plane has landed.");
+  } else {
+    throw new Error('Cannot land again');
+  }
 };
 
 Plane.prototype.takeOff = function() {

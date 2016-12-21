@@ -18,4 +18,10 @@ describe('Plane', function(){
     expect(plane.isLanded).toBe(false);
   });
 
+  it('plane cannot land again once it has landed', function() {
+    airport.landPlane(plane);
+    airport.landPlane(plane);
+    expect(plane.land()).toThrow(new Error('Cannot land again'));
+  });
+
 });
